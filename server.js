@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 
 // Import your controllers
 import { signup, login } from "./userController.js";
-import { signupDoctor, loginDoctor } from "./doctorController.js";
+import { signupDoctor, loginDoctor } from "./DoctorController.js";
 import { bookConsultation, getUserConsultations } from "./consultationController.js";
 import { rescheduleConsultation } from "./doctorRescheduleController.js";
 
@@ -175,3 +175,4 @@ const HOST = "0.0.0.0"; // listen on all network interfaces
 app.listen(PORT, HOST, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
+
